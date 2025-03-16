@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Wishes</title>
+    <style>
+        body {
+            background-color: #000000;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+            overflow: hidden; 
+            position: relative;
+        }
+
+        h1 {
+            color: white;
+            margin-bottom: 20px;
+            z-index: 1; 
+        }
+
+        .heart {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: red;
+            transform: rotate(0deg);
+            animation: drop 3s infinite;
+        }
+
+        .heart:before,
+        .heart:after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: red;
+            border-radius: 50%;
+        }
+
+        .heart:before {
+            top: -10px;
+            left: 0;
+        }
+
+        .heart:after {
+            left: 100px;
+            top: 0;
+        }
+
+        @keyframes drop {
+            0% {
+                transform: translateY(-100px) rotate(45deg);
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(100vh) rotate(45deg);
+                opacity: 0; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Happy Birthday to you </h1>
+    <div class="heart" style="left: 10%; animation-delay: 0s;"></div>
+    <div class="heart" style="left: 30%; animation-delay: 0.5s;"></div>
+    <div class="heart" style="left: 50%; animation-delay: 1s;"></div>
+    <div class="heart" style="left: 70%; animation-delay: 1.5s;"></div>
+    <div class="heart" style="left: 90%; animation-delay: 2s;"></div>
+</body>
+</html>

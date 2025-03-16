@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Wish for Girls</title>
+    <style>
+        body {
+            background-color: #ff0000;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden; 
+        }
+        .birthday-card {
+            background-color: #ffffff; 
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            padding: 30px;
+            text-align: center;
+            width: 300px;
+            animation: bounce 1s infinite; 
+        }
+        h1 {
+            color: #e74c3c; 
+            font-size: 2.5em;
+            margin: 0;
+            opacity: 0; 
+            animation: fadeIn 1s forwards; 
+            animation-delay: 0.5s; 
+        }
+        p {
+            color: #34495e; 
+            font-size: 1.2em;
+            margin: 10px 0;
+            opacity: 0;
+            animation: fadeIn 1s forwards; 
+            animation-delay: 1s; 
+        }
+        .wish {
+            font-size: 1.5em;
+            color: #27ae60; 
+            margin: 20px 0;
+            opacity: 0; 
+            animation: fadeIn 1s forwards; 
+            animation-delay: 1.5s; 
+        }
+        .button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            color: white;
+            background-color: #3498db; 
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            animation: fadeIn 1s forwards; 
+            animation-delay: 2s; 
+            opacity: 0; 
+        }
+        .button:hover {
+            background-color: #2980b9; 
+        }
+
+        
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-20px);
+            }
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="birthday-card">
+        <h1>CLICK BUTTON.</h1>
+        <button class="button" onclick="location.href='next.html'">FOR YOU...</button>
+    </div>
+</body>
+</html>
